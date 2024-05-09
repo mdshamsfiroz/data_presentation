@@ -1,0 +1,13 @@
+<struts-config>
+    <data-sources>
+        <data-source type="org.apache.commons.dbcp.BasicDataSource" key="jdbc/MySQLDB">
+            <set-property property="driverClassName" value="com.mysql.jdbc.Driver"/>
+            <set-property property="url" value="jdbc:mysql://localhost:3306/yourDatabaseName"/>
+            <set-property property="username" value="yourUsername"/>
+            <set-property property="password" value="yourPassword"/>
+            <set-property property="maxActive" value="100"/>
+            <set-property property="maxIdle" value="30"/>
+            <set-property property="maxWait" value="10000"/>
+        </data-source>
+    </data-sources>
+</struts-config>
